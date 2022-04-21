@@ -1,0 +1,127 @@
+#index{
+    width: 100%;
+    background-image: url(../img/pexels-pixabay-301717.jpg);
+    margin: 0 0;
+    height: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer";
+    grid-template-rows: 15vw auto auto 10vw;
+    grid-template-columns: 100%;
+    .navbar-nav{
+        background: linear-gradient(to right,#789a23,#987965 );
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #ffffff;
+        background-color: $bgprincipal;
+    }
+    .navbar-light .navbar-nav .nav-link.active  {
+        color: #ffffff;
+        background-color: $bgprincipal;
+    }
+    /* SECCION PRESENTACION */
+    #presentacion__empresa{
+        grid-area: main;
+        height: 120vw;
+        width: 100%;
+        gap: 1vw;
+        margin: 2vw 0.1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        .titulo__presentacion {
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            align-items: center;
+            h1{
+                font-size: 4vw;
+                text-shadow: 2px 2px 2px #ffffff;
+            }
+            h2{
+                font-size: 3vw;
+                text-shadow: 2px 2px 2px #ffffff;
+            }
+        }
+        .row {
+            width: 80vw;
+            display: flex;
+            justify-content: space-evenly;
+            .col {
+                display: flex;
+                flex-direction: row;
+                width: 20vw;
+                height: 10vw ;
+                margin:0.8vw 0.5vw;
+                transition: all 1s;
+                p {
+                    background-color: #789a23;
+                    color: #ffffff;
+                    margin: 0.3vw;
+                    width: 50%;
+                    font-size: 1.6vw;
+                }
+                p:hover{
+                    background-color: #192a38;
+                    font-size: 1.8vw;
+                    cursor: pointer;
+                }
+            }
+            img {
+                width: 30%;
+                height: 100%;
+            }
+        }
+    }
+    /* PROMOCIONES */
+    #promociones{
+        grid-area: section;
+        height: 30vw;
+        margin-bottom: 5vw;
+        & h2 {
+            text-align: center;
+            font-size: 3vw;
+            background: linear-gradient(to right,#789a23,#987965 );
+            height: 5vw;
+            margin-top: 0.5vw;
+            & a {
+                color: #ffffff;
+                transition: all 1.5s;
+                &:hover{
+                    opacity: 50%;
+                    color: red;
+                    font-size: 3.5vw;
+                }
+            }
+        }
+        & .nuestras__promos {
+            padding: 0.8vw;
+            height: 25vw;
+            gap: 1vw;
+            margin: 1vw 1vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            & .promocion {
+                width: 23vw;
+                height: 23vw;
+                border:  0.5vw solid #789a23 ;
+                background-color: #ffffff;
+                transition: all 400ms;
+                &:hover{
+                    width: 25vw;
+                    height: 25vw;
+                    border:0.7vw solid #987965;
+                    }
+                & img {
+                        width: 100%;
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+    }

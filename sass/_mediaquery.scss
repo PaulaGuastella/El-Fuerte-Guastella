@@ -1,0 +1,160 @@
+@media screen and (max-width: $tablet) {
+    #header {
+        display: flex;
+        flex-direction: row-reverse;
+        .logo__contacto {
+            width: 60vw;
+            height: 20vw;
+            .logo {
+                a {
+                    img {
+                        width: 17vw;
+                        height: 10vw;
+                    }
+                }
+            }
+        }
+        .navbar {
+            width: 30vw;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+            font-size: 2vw;
+        }
+    }
+    #footer {
+        height: 20vw;
+        flex-direction: column;
+        justify-content: center;
+        .copy {
+                p {
+                    font-size: 2.2vw;   
+                }
+            }
+        .barra__nav__footer {
+            li {
+                a{
+                    font-size: 2.2vw;
+                }
+            }
+        }
+        .contacto__footer {
+            gap: 2vw;
+            .bi {
+                font-size: 4vw;
+            }
+        }    
+    }
+    #index {
+        grid-template-rows: 30vw 130vw 80vw 30vw;
+        gap: 10vw;
+        
+        #presentacion__empresa {
+            flex-direction: column;
+            height: 90vw;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }   
+        #promociones {
+            height: 80vw;
+            .nuestras__promos{
+                flex-wrap: wrap;
+                .promocion{
+                    width: 35vw;
+                    height: 35vw;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+    #contacto {
+        grid-template-rows: 20vw 370vw 30vw;
+        .main__contacto {
+            flex-direction: column;
+            .formulario__contacto {
+                .contenedor__datos__personales {
+                    .datos__personales {
+                        input {
+                        width: 50vw;
+                        margin-left: 4vw;
+                        }
+                    }
+                }  
+            }   
+        }
+    }
+}
+/* tamaño celular */
+@media screen and (max-width:$mobile) {
+    #header {
+        height: 20vw;
+        .logo__contacto {
+            .logo {
+                img {
+                    width: 18vw;
+                }
+            }
+        }
+        .contacto__header {
+            a {
+                .bi {
+                    font-size: 4vw;
+                    color: black;
+                    margin: 0.5vw;
+                    &:hover {
+                        font-size: 4.2vw;
+                        color: black;
+                        opacity: 50%;
+                    }
+                }
+            }
+        }
+        .navbar {
+            width: 40vw;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+            font-size: 2.2vw;
+        } 
+    }
+    #footer {
+        gap: 1vw;
+        height: 30vw;
+    }
+    #index{
+        grid-template-rows: 40vw 100vw 330vw 40vw;
+        grid-template-columns: 100%;
+        margin: 0;
+        #presentacion__empresa {
+            height: 100vw;
+            align-items:center;
+            .titulo__presentacion {
+                font-size: 10vw;
+            }
+        }
+        #promociones {
+            .nuestras__promos {
+                gap: 10vw;
+                .promocion {
+                    width: 70vw;
+                    height: 70vw;
+                }
+            }
+        }
+    }
+    #contacto {
+        grid-template-rows: 20vw 450vw 35vw;
+        .main__contacto {
+            .formulario__contacto {
+                .contenedor__datos__personales {
+                    .datos__personales {
+                        input {
+                            width: 60vw;
+                        }
+                    }
+                }  
+            }   
+        }
+    }
+}

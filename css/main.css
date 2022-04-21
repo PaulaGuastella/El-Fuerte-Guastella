@@ -1,0 +1,793 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* ul li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+#header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .logo__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vw;
+}
+
+#header .logo__contacto .logo {
+  width: 15vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 3vw;
+}
+
+#header .logo__contacto .logo #header .logo__contacto .logo img {
+  width: 10vw;
+  height: 7vw;
+}
+
+#header .logo__contacto .contacto__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5vw;
+  width: 20vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .logo__contacto .contacto__header .bi {
+  font-size: 3vw;
+  color: black;
+}
+
+#header .logo__contacto .contacto__header .bi:hover {
+  font-size: 3.2vw;
+  opacity: 50%;
+}
+
+#header .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  padding: 0%;
+}
+
+#header .navbar-collapse .navbar-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header .navbar-light .navbar-nav .nav-link {
+  font-size: 1.3vw;
+  margin: 0.5vw;
+}
+
+#header .navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.header__index {
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+}
+
+.header__promociones {
+  background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
+  background: linear-gradient(to right, #987965, #ffffff);
+}
+
+.header__modelos {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#987965));
+  background: linear-gradient(to right, #ffffff, #987965);
+}
+
+.header__nosotros {
+  background: -webkit-gradient(linear, right top, left top, from(#789a23), to(#ffffff));
+  background: linear-gradient(to left, #789a23, #ffffff);
+}
+
+.header__contacto {
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+}
+
+.navbar-light .navbar-nav .nav-link .color {
+  color: #000000;
+}
+
+#index {
+  width: 100%;
+  background-image: url(../img/pexels-pixabay-301717.jpg);
+  margin: 0 0;
+  height: 100vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "section" "footer";
+  -ms-grid-rows: 15vw auto auto 10vw;
+      grid-template-rows: 15vw auto auto 10vw;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  /* SECCION PRESENTACION */
+  /* PROMOCIONES */
+}
+
+#index .navbar-nav {
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+}
+
+#index .navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  background-color: linear-gradient(to right, #789a23, #987965);
+}
+
+#index .navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: linear-gradient(to right, #789a23, #987965);
+}
+
+#index #presentacion__empresa {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  height: 120vw;
+  width: 100%;
+  gap: 1vw;
+  margin: 2vw 0.1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#index #presentacion__empresa .titulo__presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #presentacion__empresa .titulo__presentacion h1 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+#index #presentacion__empresa .titulo__presentacion h2 {
+  font-size: 3vw;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+#index #presentacion__empresa .row {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#index #presentacion__empresa .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20vw;
+  height: 10vw;
+  margin: 0.8vw 0.5vw;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#index #presentacion__empresa .row .col p {
+  background-color: #789a23;
+  color: #ffffff;
+  margin: 0.3vw;
+  width: 50%;
+  font-size: 1.6vw;
+}
+
+#index #presentacion__empresa .row .col p:hover {
+  background-color: #192a38;
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+
+#index #presentacion__empresa .row img {
+  width: 30%;
+  height: 100%;
+}
+
+#index #promociones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: section;
+  height: 30vw;
+  margin-bottom: 5vw;
+}
+
+#index #promociones h2 {
+  text-align: center;
+  font-size: 3vw;
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+  height: 5vw;
+  margin-top: 0.5vw;
+}
+
+#index #promociones h2 a {
+  color: #ffffff;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+#index #promociones h2 a:hover {
+  opacity: 50%;
+  color: red;
+  font-size: 3.5vw;
+}
+
+#index #promociones .nuestras__promos {
+  padding: 0.8vw;
+  height: 25vw;
+  gap: 1vw;
+  margin: 1vw 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#index #promociones .nuestras__promos .promocion {
+  width: 23vw;
+  height: 23vw;
+  border: 0.5vw solid #789a23;
+  background-color: #ffffff;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#index #promociones .nuestras__promos .promocion:hover {
+  width: 25vw;
+  height: 25vw;
+  border: 0.7vw solid #987965;
+}
+
+#index #promociones .nuestras__promos .promocion img {
+  width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#contacto {
+  background-image: url("../img/fondo-contacto.jpeg");
+  gap: 2vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 15vw auto 10vw;
+      grid-template-rows: 15vw auto 10vw;
+}
+
+#contacto .header__contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+#contacto .header__contacto .navbar-nav {
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+}
+
+#contacto .header__contacto .navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+#contacto .header__contacto .navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
+#contacto .main__contacto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2vw;
+  gap: 1vw;
+}
+
+#contacto .main__contacto .formulario__contacto {
+  background-image: url("../img/fondo-contacto.jpeg");
+  color: #000000;
+  border: 0.4vw solid #000000;
+}
+
+#contacto .main__contacto .formulario__contacto h2 {
+  margin: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__personales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales {
+  margin: 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales label {
+  font-weight: bold;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
+  width: 20vw;
+  padding: 0.4vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra {
+  margin: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras {
+  margin: 0.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras h3 {
+  margin: 0.5vw 0;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .radio__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .dato__tipologia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-items: auto;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .dato__tipologia .opciones__tipologias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1vw;
+  padding: 0.2vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .datos__habitaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .datos__habitaciones .opcion__habitacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__compra .datos__compras .provincia {
+  padding: 0.5vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__libres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1vw;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__datos__libres h3 {
+  padding: 1vw 0;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones input {
+  margin: 10px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input {
+  background-color: #789a23;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input:hover {
+  opacity: 80%;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input:visited {
+  color: gray;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input {
+  background-color: #ea4322;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input input:hover {
+  opacity: 80%;
+}
+
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input:visited {
+  color: gray;
+}
+
+#contacto .main__contacto .imagen__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5vw;
+}
+
+#contacto .main__contacto .imagen__contacto img {
+  width: 100%;
+}
+
+#contacto .main__contacto .imagen__contacto img:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* FOOTER */
+#footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+#footer .copy {
+  color: #ffffff;
+  font-size: 1.5vw;
+  margin-right: 4vw;
+  display: inline-block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#footer .barra__nav__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5vw;
+}
+
+#footer .barra__nav__footer li a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+}
+
+#footer .barra__nav__footer li a:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+#footer .contacto__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5vw;
+}
+
+#footer .contacto__footer a .bi {
+  font-size: 3vw;
+  color: black;
+}
+
+#footer .contacto__footer a .bi:hover {
+  font-size: 3.2vw;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #header .logo__contacto {
+    width: 60vw;
+    height: 20vw;
+  }
+  #header .logo__contacto .logo a img {
+    width: 17vw;
+    height: 10vw;
+  }
+  #header .navbar {
+    width: 30vw;
+  }
+  #header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 2vw;
+  }
+  #footer {
+    height: 20vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .copy p {
+    font-size: 2.2vw;
+  }
+  #footer .barra__nav__footer li a {
+    font-size: 2.2vw;
+  }
+  #footer .contacto__footer {
+    gap: 2vw;
+  }
+  #footer .contacto__footer .bi {
+    font-size: 4vw;
+  }
+  #index {
+    -ms-grid-rows: 30vw 130vw 80vw 30vw;
+        grid-template-rows: 30vw 130vw 80vw 30vw;
+    gap: 10vw;
+  }
+  #index #presentacion__empresa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+  }
+  #index #promociones {
+    height: 80vw;
+  }
+  #index #promociones .nuestras__promos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #index #promociones .nuestras__promos .promocion {
+    width: 35vw;
+    height: 35vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contacto {
+    -ms-grid-rows: 20vw 370vw 30vw;
+        grid-template-rows: 20vw 370vw 30vw;
+  }
+  #contacto .main__contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
+    width: 50vw;
+    margin-left: 4vw;
+  }
+}
+
+/* tamaño celular */
+@media screen and (max-width: 481px) {
+  #header {
+    height: 20vw;
+  }
+  #header .logo__contacto .logo img {
+    width: 18vw;
+  }
+  #header .contacto__header a .bi {
+    font-size: 4vw;
+    color: black;
+    margin: 0.5vw;
+  }
+  #header .contacto__header a .bi:hover {
+    font-size: 4.2vw;
+    color: black;
+    opacity: 50%;
+  }
+  #header .navbar {
+    width: 40vw;
+  }
+  #header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 2.2vw;
+  }
+  #footer {
+    gap: 1vw;
+    height: 30vw;
+  }
+  #index {
+    -ms-grid-rows: 40vw 100vw 330vw 40vw;
+        grid-template-rows: 40vw 100vw 330vw 40vw;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin: 0;
+  }
+  #index #presentacion__empresa {
+    height: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #index #presentacion__empresa .titulo__presentacion {
+    font-size: 10vw;
+  }
+  #index #promociones .nuestras__promos {
+    gap: 10vw;
+  }
+  #index #promociones .nuestras__promos .promocion {
+    width: 70vw;
+    height: 70vw;
+  }
+  #contacto {
+    -ms-grid-rows: 20vw 450vw 35vw;
+        grid-template-rows: 20vw 450vw 35vw;
+  }
+  #contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
+    width: 60vw;
+  }
+}

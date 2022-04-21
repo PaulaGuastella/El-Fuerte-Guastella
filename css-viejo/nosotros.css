@@ -1,0 +1,371 @@
+/* reseteo general */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+/* saco estilo a todos los li */
+ul li {
+    list-style: none;
+}
+/* saco estilo a todos los link */
+a {
+    text-decoration: none;
+}
+/* PAGINA NOSOTROS */
+.body__nosotros {
+    background-image: url(../img/fondo-nosotros-2.jpeg);
+    display: grid;
+    gap: 5vw;
+    grid-template-areas: 
+    "header"
+    "sucursales"
+    "nosotros"
+    "footer";
+    grid-template-rows: 15vw 60vw 90vw 10vw;
+    grid-template-columns: 100%;
+}
+/* seccion header */
+#header {
+    grid-area: header;
+    background: linear-gradient(to left,#789a23,#ffffff );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.logo__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vw;
+}
+.logo {
+    width: 15vw;
+    align-self: center;
+    margin-left: 3vw;
+}
+.logo img {
+    width: 10vw;
+    height: 7vw;
+}
+.contacto__header{
+    display: flex;
+    gap: 1.5vw;
+    width: 20vw;
+    align-items: center;
+}
+.bi {
+    font-size: 3vw;
+    color: black;
+}
+.bi:hover {
+    font-size: 3.2vw;
+    color: black;
+    opacity: 50%;
+}
+/* NAV BAR */
+.navbar-collapse{
+    justify-content: end;
+    width: 100%;
+    padding: 0%;
+}
+.navbar-nav{
+    background: linear-gradient(to left,#789a23,#ffffff );
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-size: 1.3vw;
+    margin: 0.5vw;
+} 
+.navbar-light .navbar-nav .nav-link.active {
+    color:#000;
+    font-weight: bold;
+}
+/* estilos de los enlaces a redes sociales */
+.contacto__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 25%;
+}
+.contacto__menu .contacto__header {
+    align-self: flex-end;
+    justify-content: space-evenly;
+    margin-right: 1vw;
+}
+.contacto__menu .contacto__header img {
+    width: 3.2vw;
+    height: 3.2vw;
+    margin: 2vw;
+}
+.contacto__menu .contacto__header img:hover {
+    opacity: 50%;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+}
+/* Sucursales */
+.nuestras__sucursales {
+    grid-area: sucursales;
+    margin: 5vw;
+}
+.nuestras__sucursales h2{
+    color: #000000;
+    text-shadow: 2px 2px 2px #ffffff;
+    margin: 1vw;
+    margin-bottom: 3vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+}
+
+.nuestras__sucursales h3{
+    color: #000000;
+    text-shadow: 2px 2px 2px #ffffff;
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin: 1vw;
+}
+.sucursales {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    gap: 10vw;
+    margin: 1vw;
+}
+.sucursal__map {
+    border: 0.3vw dotted black;
+    height: 45vw;
+    width: 60vw;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+.sucuesal__map p {
+    font-size: 1.5vw;
+    text-align: center;
+}
+.sucursal__map iframe{
+    width: 35vw;
+    height: 25vw;
+}
+/* Nosotros */
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros h2 {
+    color: #000000;
+    text-shadow: 2px 2px 2px #ffffff;
+    margin: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5vw;
+    letter-spacing: 0.3vw;
+}
+.sobre__nosotros {
+    width: 80vw;
+}
+.sobre__nosotros p{
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 2.5vw;
+}
+.sobre__nosotros span{
+    font-weight: bold;
+    font-size: 2vw;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+.video__institucional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw auto;
+}
+.video__institucional iframe {
+    height: 40vw;
+    width: 50vw;
+}
+/* FOOTER */
+#footer{
+    grid-area: footer;
+    background: linear-gradient(to left,#789a23,#ffffff );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-end;
+}
+#footer .copy{
+    color: #000000;
+    margin-right: 4vw;
+    display: inline-block;
+    justify-content: flex-start;
+}
+#footer .barra__nav__footer {
+    display: flex;
+    gap: 0.5vw;
+}
+#footer .barra__nav__footer li a{
+    display: inline-block;
+    color: #000000;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+}
+#footer .barra__nav__footer li a:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+.contacto__footer{
+    display: flex;
+    gap: 1.5vw;
+}
+.bi {
+    font-size: 3vw;
+    color: black;
+}
+.bi:hover {
+    font-size: 3.2vw;
+    color: black;
+    opacity: 50%;
+}
+@media screen and (max-width: 768px) {
+    .body__nosotros {
+        grid-template-rows: 20vw 155vw 120vw 25vw;
+        grid-template-column: 100%;
+        gap: 15vw;
+    }
+    #header {
+        flex-direction: row-reverse;
+    }
+    .contacto__header {
+        margin-right: 5vw;
+    }
+    .logo__contacto {
+        width: 80vw;
+        height: 20vw;
+    }
+    .logo img {
+        width: 15vw;
+        height: 9vw;
+    }
+    .navbar{
+        width: 40vw;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+        font-size: 2vw;
+    } 
+    .nuestras__sucursales {
+        margin: 2vw;
+    }
+    .sucursales {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sucursal__map{
+        width: 80vw;
+        height: 65vw;
+    }
+    .sucursal__map iframe{
+        width: 55vw;
+        height: 45vw;
+    }
+    .sobre__nosotros p {
+        font-size: 2vw;
+    }
+    .video__institucional iframe {
+        width: 80vw;
+        height: 60vw;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    #footer .barra__nav__footer li a{
+        display: inline-block;
+        color: #000000;
+        font-size: 2.5vw;
+        padding: 0.5vw;
+    }
+    #footer .barra__nav__footer li a:hover {
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+}
+@media screen and (max-width:481px){
+    .body__nosotros {
+        grid-template-rows: 20vw 200vw 230vw 35vw;
+        gap: 35vw;
+    }
+    .nuestras__sucursales h2 {
+        font-size: 10vw;
+    }
+    .nuestras__sucursales h3 {
+        font-size: 7vw;
+    }
+    .nosotros h2 {
+        font-size: 10vw;
+    }
+    .sobre__nosotros p {
+        font-size: 4vw;
+    }
+    .sucursal__map{
+        height: 110vw;
+        width: 95vw;
+    }
+    .sobre__nosotros {
+        height: 90vw;
+    }
+    .sobre__nosotros p {
+        font-size: 3vw;
+        height: 40vw;
+        line-height: 4vw;
+        align-items: center;
+        
+    }
+    .segundo__parrafo {
+        height: 60vw;
+    }
+    .sobre__nosotros span{
+        font-size: 4.5vw;
+    }
+    .video__institucional {
+        margin-top: 15vw;
+    }
+    #footer .copy{
+        color: #000000;
+        margin-right: 4vw;
+        display: inline-block;
+        justify-content: flex-start;
+    }
+    #footer .barra__nav__footer {
+        display: flex;
+        gap: 0.5vw;
+    }
+    #footer .barra__nav__footer li a{
+        font-size: 3.5vw;
+        padding: 0.5vw;
+    }
+    .contacto__footer{
+        display: flex;
+        gap: 1.5vw;
+    }
+    .bi {
+        font-size: 5vw;
+        color: black;
+    }
+    .bi:hover {
+        font-size: 3.2vw;
+    }
+}
