@@ -315,6 +315,127 @@
   transition: all 1s;
 }
 
+#promociones {
+  background-image: url("../img/fondo-promociones.jpg");
+  display: -ms-grid;
+  display: grid;
+  gap: 2vw;
+      grid-template-areas: "header" "menu" "footer";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 15vw 150vw 10vw;
+      grid-template-rows: 15vw 150vw 10vw;
+}
+
+#promociones .header__promociones {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#promociones .header__promociones .navbar-nav {
+  background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
+  background: linear-gradient(to right, #987965, #ffffff);
+}
+
+#promociones .header__promociones .navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#promociones .header__promociones .navbar-light .navbar-nav .nav-link.active {
+  color: #000000;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#promociones .seccion__promocion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  margin: 2vw;
+}
+
+#promociones .seccion__promocion h1 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000;
+  height: 10vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 3vw;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2vw;
+  width: 100vw;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__img {
+  margin: 2vw;
+  border: 0.4vw solid white;
+  background-color: #ffffff;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__texto {
+  margin: 2vw;
+  width: 40vw;
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+  border: 0.4vw solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__texto h2 {
+  margin: 2vw auto;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__texto .listado__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__texto .listado__promo li {
+  list-style: url("../img/tilde.png");
+  width: 30vw;
+}
+
+#promociones .footer__promociones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
+  background: linear-gradient(to right, #987965, #ffffff);
+}
+
 #contacto {
   background-image: url("../img/fondo-contacto.jpeg");
   gap: 2vw;
@@ -569,9 +690,304 @@
   cursor: pointer;
 }
 
+#modelo {
+  background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
+  background: linear-gradient(to right, #789a23, #987965);
+  display: -ms-grid;
+  display: grid;
+  gap: 5vw;
+      grid-template-areas: "header" "menu" "footer";
+  -ms-grid-rows: 15vw auto 10vw;
+      grid-template-rows: 15vw auto 10vw;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+#modelo .header__modelos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#modelo .header__modelos .navbar-nav {
+  background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
+  background: linear-gradient(to right, #987965, #ffffff);
+}
+
+#modelo .header__modelos .navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#modelo .header__modelos .navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: linear-gradient(to right, #987965, #ffffff);
+}
+
+#modelo .menu__modelos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+#modelo .menu__modelos h2 {
+  text-align: center;
+  background: -webkit-gradient(linear, buttom, from(#987965), to(#789a23));
+  background: linear-gradient(to buttom, #987965, #789a23);
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000;
+  height: 10vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+#modelo .menu__modelos .tipologias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modelo .menu__modelos .tipologias .imagen__modelos {
+  border: 0.3vw solid beige;
+}
+
+#modelo .menu__modelos .tipologias .imagen__modelos img {
+  width: 50vw;
+  height: 100%;
+}
+
+#modelo .menu__modelos .tipologias .caracteristicas__modelo {
+  background-image: url("../img/modelos__caracteristicas.jpeg");
+  width: 40vw;
+  border: 0.3vw solid beige;
+  opacity: 95%;
+}
+
+#modelo .menu__modelos .tipologias .caracteristicas__modelo h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5vw;
+  text-shadow: 2px 2px 2px #000;
+  opacity: 100%;
+}
+
+#modelo .menu__modelos .tipologias .caracteristicas__modelo .especificaciones {
+  color: #ffffff;
+  opacity: 100%;
+  text-shadow: 1.5px 1.5px 1.5px #000;
+  margin-left: 1vw;
+  padding: 2vw;
+  font-size: 1.5vw;
+  gap: 2.2vw;
+}
+
+#modelo .menu__modelos .tipologias .caracteristicas__modelo .especificaciones li {
+  list-style: circle;
+}
+
+#modelo .footer_modelos {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#987965));
+  background: linear-gradient(to right, #ffffff, #987965);
+}
+
+#modelo .footer_modelos .copy p {
+  color: #000000;
+  font-size: 1vw;
+}
+
+#modelo .footer_modelos .barra__nav__footer li a {
+  color: #000000;
+}
+
+#nosotros {
+  background-image: url(../img/fondo-nosotros-2.jpeg);
+  display: -ms-grid;
+  display: grid;
+  gap: 5vw;
+      grid-template-areas: "header" "sucursales" "nosotros" "footer";
+  -ms-grid-rows: 15vw 60vw 90vw 10vw;
+      grid-template-rows: 15vw 60vw 90vw 10vw;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+#nosotros .header__nosotros {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: linear-gradient(to left, #789a23, #ffffff);
+}
+
+#nosotros .header__nosotros .navbar-nav {
+  background: -webkit-gradient(linear, right top, left top, from(#789a23), to(#ffffff));
+  background: linear-gradient(to left, #789a23, #ffffff);
+}
+
+#nosotros .header__nosotros .navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  background-color: linear-gradient(to left, #789a23, #ffffff);
+}
+
+#nosotros .header__nosotros .navbar-light .navbar-nav .nav-link.active {
+  color: #000000;
+  background-color: linear-gradient(to left, #789a23, #ffffff);
+}
+
+#nosotros .nuestras__sucursales {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sucursales;
+  margin: 5vw;
+}
+
+#nosotros .nuestras__sucursales h1 {
+  color: #000000;
+  text-shadow: 2px 2px 2px #ffffff;
+  margin: 1vw;
+  margin-bottom: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5vw;
+  letter-spacing: 0.3vw;
+}
+
+#nosotros .nuestras__sucursales h3 {
+  color: #000000;
+  text-shadow: 2px 2px 2px #ffffff;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin: 1vw;
+}
+
+#nosotros .nuestras__sucursales .sucursales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10vw;
+  margin: 1vw;
+}
+
+#nosotros .nuestras__sucursales .sucursales .sucursal__map {
+  border: 0.3vw dotted black;
+  height: 45vw;
+  width: 60vw;
+  margin: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+
+#nosotros .nuestras__sucursales .sucursales .sucursal__map p {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#nosotros .nuestras__sucursales .sucursales .sucursal__map iframe {
+  width: 35vw;
+  height: 25vw;
+}
+
+#nosotros .nosotros {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nosotros;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nosotros .nosotros h2 {
+  color: #000000;
+  text-shadow: 2px 2px 2px #ffffff;
+  margin: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5vw;
+  letter-spacing: 0.3vw;
+}
+
+#nosotros .nosotros .sobre__nosotros {
+  width: 80vw;
+}
+
+#nosotros .nosotros .sobre__nosotros p {
+  font-size: 1.5vw;
+  text-align: center;
+  line-height: 2.5vw;
+}
+
+#nosotros .nosotros .sobre__nosotros span {
+  font-weight: bold;
+  font-size: 2vw;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+#nosotros .nosotros .video__institucional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3vw auto;
+}
+
+#nosotros .nosotros .video__institucional iframe {
+  height: 40vw;
+  width: 50vw;
+}
+
+#nosotros .footer__nosotros {
+  background: -webkit-gradient(linear, right top, left top, from(#789a23), to(#ffffff));
+  background: linear-gradient(to left, #789a23, #ffffff);
+}
+
+#nosotros .footer__nosotros .copy p {
+  color: #000000;
+  font-size: 1vw;
+}
+
+#nosotros .footer__nosotros .barra__nav__footer li a {
+  color: #000000;
+}
+
 /* FOOTER */
 #footer {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: footer;
   background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
@@ -729,10 +1145,117 @@
     width: 50vw;
     margin-left: 4vw;
   }
+  #promociones {
+    -ms-grid-rows: 20vw 650vw 30vw;
+        grid-template-rows: 20vw 650vw 30vw;
+    gap: 10vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__img {
+    width: 80vw;
+    height: 80vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__img img {
+    width: 100%;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
+    width: 80vw;
+    height: 70vw;
+  }
+  #modelo {
+    -ms-grid-rows: 20vw 460vw 20vw;
+        grid-template-rows: 20vw 460vw 20vw;
+    gap: 18vw;
+  }
+  #modelo .menu__modelos h2 {
+    font-size: 4.5vw;
+  }
+  #modelo .menu__modelos .tipologias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos {
+    width: 80vw;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos img {
+    width: 100%;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo {
+    width: 80vw;
+    height: 60vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo h4 {
+    font-size: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo li {
+    font-size: 2.5vw;
+  }
+  #nosotros {
+    -ms-grid-rows: 20vw 155vw 90vw 25vw;
+        grid-template-rows: 20vw 155vw 90vw 25vw;
+    grid-template-column: 100%;
+    gap: 15vw;
+  }
+  #nosotros .nuestras__sucursales {
+    margin: 2vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map {
+    width: 80vw;
+    height: 70vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map iframe {
+    width: 55vw;
+    height: 45vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map h3 {
+    font-size: 3vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map p {
+    font-size: 2.2vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .nosotros .sobre__nosotros p {
+    font-size: 4vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .nosotros .video__institucional iframe {
+    width: 1000vw;
+    height: 60vw;
+  }
+  /* tamaño celular */
 }
 
-/* tamaño celular */
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 768px) and (max-width: 481px) {
   #header {
     height: 20vw;
   }
@@ -776,18 +1299,111 @@
   #index #presentacion__empresa .titulo__presentacion {
     font-size: 10vw;
   }
-  #index #promociones .nuestras__promos {
+  #promociones .nuestras__promos {
     gap: 10vw;
   }
-  #index #promociones .nuestras__promos .promocion {
+  #promociones .nuestras__promos .promocion {
     width: 70vw;
     height: 70vw;
   }
+}
+
+@media screen and (max-width: 768px) {
   #contacto {
     -ms-grid-rows: 20vw 450vw 35vw;
         grid-template-rows: 20vw 450vw 35vw;
   }
   #contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
     width: 60vw;
+  }
+  #promociones {
+    -ms-grid-rows: 30vw 840vw 30vw;
+        grid-template-rows: 30vw 840vw 30vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
+    height: 110vw;
+  }
+  #modelo {
+    -ms-grid-rows: 20vw 540vw 20vw;
+        grid-template-rows: 20vw 540vw 20vw;
+    gap: 18vw;
+  }
+  #modelo .menu__modelos h2 {
+    font-size: 4.5vw;
+  }
+  #modelo .menu__modelos .tipologias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos {
+    width: 65vw;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos img {
+    width: 100%;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo {
+    width: 65vw;
+    height: 90vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo h4 {
+    font-size: 4vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo li {
+    font-size: 3.2vw;
+  }
+  #nosotros {
+    -ms-grid-rows: 20vw 200vw 250vw 35vw;
+        grid-template-rows: 20vw 200vw 250vw 35vw;
+    gap: 35vw;
+  }
+  #nosotros section .nuestras__sucursales h1 {
+    font-size: 10vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map {
+    width: 80vw;
+    height: 130vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map h3 {
+    font-size: 7vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map p {
+    font-size: 5vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map iframe {
+    width: 70vw;
+    height: 60vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros {
+    height: 90vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros p {
+    font-size: 3vw;
+    height: 40vw;
+    line-height: 4vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nosotros section .nosotros .sobre__nosotros .segundo__parrafo {
+    height: 60vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros span {
+    font-size: 4.5vw;
+  }
+  #nosotros section .nosotros .video__institucional {
+    margin-top: 25vw;
+  }
+  #nosotros section .nosotros .video__institucional iframe {
+    width: 70vw;
+    height: 60vw;
   }
 }

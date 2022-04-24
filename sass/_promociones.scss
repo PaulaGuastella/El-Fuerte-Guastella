@@ -1,0 +1,77 @@
+#promociones {
+    background-image: url('../img/fondo-promociones.jpg');
+    display: grid;
+    gap: 2vw;
+    grid-template-areas:  
+    "header"
+    "menu"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15vw 150vw 10vw;
+    .header__promociones {
+        grid-area: header;
+        background-color: $bgpromociones;
+        .navbar-nav{
+            background: $bgpromociones;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #000000;
+            background-color: $bgpromociones;
+        }
+        .navbar-light .navbar-nav .nav-link.active  {
+            color: #000000;
+            background-color: $bgpromociones;
+        }
+    }
+    .seccion__promocion {
+        grid-area: menu;
+        margin: 2vw;
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px #000;
+            height: 10vw;
+            font-size: 5vw;
+            text-transform: uppercase;
+            margin-bottom: 3vw;
+        }
+        .promo__caracteristicas {
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            width: 100vw;
+            .promo__img {
+                margin: 2vw;
+                border: 0.4vw solid white;
+                background-color: #ffffff;
+            }
+            .promo__texto {
+                margin: 2vw;
+                width: 40vw;
+                background: $bgprincipal;
+                border: 0.4vw solid #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    margin: 2vw auto;
+                    text-shadow: 1px 1px 1px #ffffff;;
+                }
+                .listado__promo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    li {
+                        list-style: url('../img/tilde.png');
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+    }
+    .footer__promociones {
+        grid-area: footer;
+        background: $bgpromociones;
+    }
+}

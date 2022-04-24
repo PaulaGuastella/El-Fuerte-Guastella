@@ -84,6 +84,100 @@
             }   
         }
     }
+    #promociones{
+        grid-template-rows: 20vw 650vw 30vw;
+        gap: 10vw;
+        .seccion__promocion {
+            .promo__caracteristicas{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .promo__img{
+                    width: 80vw;
+                    height: 80vw;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .promo__texto{
+                    width: 80vw;
+                    height: 70vw;
+                }
+            }
+        } 
+    }
+    #modelo{
+        grid-template-rows: 20vw 460vw 20vw;
+        gap: 18vw;
+        .menu__modelos {
+            h2 {
+                font-size: 4.5vw;
+            }
+            .tipologias {
+                flex-direction: column;
+                gap: 3vw;
+                align-items: center;
+                margin: 3vw;
+                .imagen__modelos {
+                    width: 80vw;
+                    height: auto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .caracteristicas__modelo {
+                    width: 80vw;
+                    height: 60vw;
+                    h4{
+                        font-size: 3vw;
+                    }
+                    li{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+    #nosotros {
+        grid-template-rows: 20vw 155vw 90vw 25vw;
+        grid-template-column: 100%;
+        gap: 15vw;
+        .nuestras__sucursales {
+            margin: 2vw;
+            .sucursales {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .sucursal__map{
+                    width: 80vw;
+                    height: 70vw;
+                    iframe{
+                        width: 55vw;
+                        height: 45vw;
+                    }
+                    h3 {
+                        font-size: 3vw;
+                    }
+                    p {
+                        font-size: 2.2vw;
+                    }
+                }
+            .nosotros {
+                .sobre__nosotros {
+                    p{
+                        font-size: 4vw;
+                    }
+                }
+                .video__institucional {
+                    & iframe {
+                        width: 1000vw;
+                        height: 60vw;
+                    }
+                }
+            }
+        }
+    }
 }
 /* tamaño celular */
 @media screen and (max-width:$mobile) {
@@ -133,6 +227,7 @@
                 font-size: 10vw;
             }
         }
+    }
         #promociones {
             .nuestras__promos {
                 gap: 10vw;
@@ -155,6 +250,100 @@
                     }
                 }  
             }   
+        }
+    }
+    #promociones {
+        grid-template-rows: 30vw 840vw 30vw;
+        .seccion__promocion {
+            .promo__caracteristicas {
+                .promo__texto {
+                    height: 110vw;
+                }
+            }
+        }
+    }
+    #modelo{
+        grid-template-rows: 20vw 540vw 20vw;
+        gap: 18vw;
+        .menu__modelos {
+            h2 {
+                font-size: 4.5vw;
+            }
+            .tipologias {
+                flex-direction: column;
+                gap: 3vw;
+                align-items: center;
+                margin: 3vw;
+                .imagen__modelos {
+                    width: 65vw;
+                    height: auto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .caracteristicas__modelo {
+                    width: 65vw;
+                    height: 90vw;
+                    h4{
+                        font-size: 4vw;
+                    }
+                    li{
+                        font-size: 3.2vw;
+                    }
+                }
+            }
+        }
+    }
+    #nosotros {
+        grid-template-rows: 20vw 200vw 250vw 35vw;
+        gap: 35vw;
+        section {
+            .nuestras__sucursales {
+                h1 {
+                    font-size: 10vw;
+                }
+                .sucursales {
+                    .sucursal__map {
+                        width: 80vw;
+                        height: 130vw;
+                        h3 {
+                            font-size: 7vw;
+                        }
+                        p {
+                            font-size: 5vw;
+                        }
+                        iframe {
+                            width: 70vw;
+                            height: 60vw;
+                        }
+                    }
+                }
+            }
+            .nosotros {
+                .sobre__nosotros {
+                    height: 90vw;
+                    p {
+                        font-size: 3vw;
+                        height: 40vw;
+                        line-height: 4vw;
+                        align-items: center;
+                    }
+                    .segundo__parrafo {
+                        height: 60vw;
+                    }
+                    span{
+                        font-size: 4.5vw;
+                    }
+                }
+                .video__institucional {
+                    margin-top: 25vw;
+                    iframe {
+                        width: 70vw;
+                        height: 60vw;
+                    }
+                }
+            }
         }
     }
 }

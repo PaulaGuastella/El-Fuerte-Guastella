@@ -1,0 +1,92 @@
+#modelo{
+    background: $bgprincipal;
+    display: grid;
+    gap: 5vw;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "footer";
+    grid-template-rows: 15vw auto 10vw;
+    grid-template-columns: 100%;
+    .header__modelos{
+        grid-area: header;
+        background-color: $bgpromociones;
+        .navbar-nav{
+            background: $bgpromociones;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff;
+            background-color: $bgpromociones;
+        }
+        .navbar-light .navbar-nav .nav-link.active  {
+            color: #ffffff;
+            background-color: $bgpromociones;
+        }
+    }
+    .menu__modelos {
+        grid-area: menu;
+        h2 {
+            text-align: center;
+            background: $bgmenumodelos;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px #000;
+            height: 10vw;
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+        .tipologias {
+            display: flex;
+            flex-direction: row;
+            margin: 1vw;
+            justify-content: space-between;
+            .imagen__modelos {
+                border: 0.3vw solid beige;
+                img{
+                    width: 50vw;
+                    height: 100%;
+                }
+            }
+            .caracteristicas__modelo {
+                background-image: url('../img/modelos__caracteristicas.jpeg');
+                width: 40vw;
+                border: 0.3vw solid beige;
+                opacity: 95%;
+                h4 {
+                    text-align: center;
+                    color: #ffffff;
+                    font-size: 2.5vw;
+                    text-shadow: 2px 2px 2px #000;
+                    opacity: 100%;
+                }
+                .especificaciones {
+                    color: #ffffff;
+                    opacity: 100%;
+                    text-shadow: 1.5px 1.5px 1.5px #000;
+                    margin-left: 1vw;
+                    padding: 2vw;
+                    font-size: 1.5vw;
+                    gap: 2.2vw;
+                    li {
+                        list-style: circle;
+                    }
+                }
+            }
+        }
+    }
+    .footer_modelos {
+        background: $bgmodelos;
+        .copy {
+            p {
+                color: #000000;
+                font-size: 1vw;
+            }
+        }
+        .barra__nav__footer {
+            li {
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@
     grid-template-rows: 15vw auto auto 10vw;
     grid-template-columns: 100%;
     .navbar-nav{
-        background: linear-gradient(to right,#789a23,#987965 );
+        background: $bgprincipal;
     }
     .navbar-light .navbar-nav .nav-link {
         color: #ffffff;

@@ -1,0 +1,128 @@
+#nosotros {
+    background-image: url(../img/fondo-nosotros-2.jpeg);
+    display: grid;
+    gap: 5vw;
+    grid-template-areas: 
+    "header"
+    "sucursales"
+    "nosotros"
+    "footer";
+    grid-template-rows: 15vw 60vw 90vw 10vw;
+    grid-template-columns: 100%;
+    .header__nosotros {
+        grid-area: header;
+        background-color: $bgnosotros;
+        .navbar-nav{
+            background: $bgnosotros;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #000000;
+            background-color: $bgnosotros;
+        }
+        .navbar-light .navbar-nav .nav-link.active  {
+            color: #000000;
+            background-color: $bgnosotros;
+        }
+    }
+
+    .nuestras__sucursales {
+        grid-area: sucursales;
+        margin: 5vw;
+        h1{
+            color: #000000;
+            text-shadow: 2px 2px 2px #ffffff;
+            margin: 1vw;
+            margin-bottom: 3vw;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 5vw;
+            letter-spacing: 0.3vw;
+        }
+        h3{
+            color: #000000;
+            text-shadow: 2px 2px 2px #ffffff;
+            font-size: 3vw;
+            text-transform: uppercase;
+            margin: 1vw;
+        }
+        .sucursales {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            gap: 10vw;
+            margin: 1vw;
+            .sucursal__map {
+                border: 0.3vw dotted black;
+                height: 45vw;
+                width: 60vw;
+                margin: 1vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2vw;
+                p {
+                    font-size: 1.5vw;
+                    text-align: center;
+                }
+                & iframe{
+                    width: 35vw;
+                    height: 25vw;
+                }
+            }
+        }
+    }
+    .nosotros {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            color: #000000;
+            text-shadow: 2px 2px 2px #ffffff;
+            margin: 1vw;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 5vw;
+            letter-spacing: 0.3vw;
+        }
+        .sobre__nosotros {
+            width: 80vw;
+            p{
+                font-size: 1.5vw;
+                text-align: center;
+                line-height: 2.5vw;
+            }
+            span{
+                font-weight: bold;
+                font-size: 2vw;
+                text-shadow: 2px 2px 2px #ffffff;
+            }
+        }
+        .video__institucional {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3vw auto;
+            iframe {
+                height: 40vw;
+                width: 50vw;
+            }
+        }
+    }
+    .footer__nosotros {
+        background: $bgnosotros;
+        .copy {
+            p {
+                color: #000000;
+                font-size: 1vw;
+            }
+        }
+        .barra__nav__footer {
+            li {
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
