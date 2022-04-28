@@ -10,17 +10,17 @@
     grid-template-columns: 100%;
     .header__modelos{
         grid-area: header;
-        background-color: $bgpromociones;
+        background-color: $bgmodelos;
         .navbar-nav{
-            background: $bgpromociones;
+            background: $bgmodelos;
         }
         .navbar-light .navbar-nav .nav-link {
-            color: #ffffff;
-            background-color: $bgpromociones;
+            color: #000000;
+            background-color: $bgmodelos;
         }
         .navbar-light .navbar-nav .nav-link.active  {
-            color: #ffffff;
-            background-color: $bgpromociones;
+            color: #000000;
+            background-color: $bgmodelos;
         }
     }
     .menu__modelos {

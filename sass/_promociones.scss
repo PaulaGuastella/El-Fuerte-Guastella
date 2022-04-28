@@ -7,7 +7,7 @@
     "menu"
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 15vw 150vw 10vw;
+    grid-template-rows: 15vw 190vw 10vw;
     .header__promociones {
         grid-area: header;
         background-color: $bgpromociones;
@@ -39,11 +39,22 @@
             display: flex;
             flex-direction: row;
             gap: 2vw;
-            width: 100vw;
+            width: auto;
             .promo__img {
                 margin: 2vw;
-                border: 0.4vw solid white;
+                width: 40vw;
+                border: 0.5vw solid white;
                 background-color: #ffffff;
+                border-radius: 2%;
+                overflow: hidden;
+                &:hover {
+                    filter:sepia(50%);
+                    cursor:pointer;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .promo__texto {
                 margin: 2vw;
@@ -54,6 +65,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                border-radius: 2%;
+                &:hover {
+                    filter:sepia(50%);
+                    cursor:pointer;
+                }
                 h2{
                     margin: 2vw auto;
                     text-shadow: 1px 1px 1px #ffffff;;
@@ -73,5 +89,14 @@
     .footer__promociones {
         grid-area: footer;
         background: $bgpromociones;
+        .menu__nav__footer {
+            .barra__nav__footer {
+                li {
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+        }
     }
 }

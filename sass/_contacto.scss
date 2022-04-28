@@ -30,6 +30,7 @@
             background-image: url('../img/fondo-contacto.jpeg');
             color: #000000;
             border: 0.4vw solid #000000;
+            border-radius: 1%;
             & h2{
                 margin: 2vw;
                 text-align: center;
@@ -115,26 +116,30 @@
                     padding: 10px;
                     color: #ffffff;
                 }
+                /* maps */
+                $buttom:(
+                    send: #98e12a,
+                    delete:#973636
+                );
+                @mixin btn {
+                    width: 8vw;
+                    &:hover {
+                        opacity: 50%;
+                    }
+                    &:visited {
+                        color: #808080;
+                    }
+                }
                 .boton__enviar{
                     input {
-                        background-color: #789a23;
-                        &:hover{
-                            opacity: 80%;
-                        }
-                        &:visited{
-                            color: gray;
-                        }
+                        @include btn;
+                        background: map-get($map: $buttom, $key: send);
                     } 
                 }
-                .boton__borrar {
+                .boton__borrar{
                     input{
-                        background-color: #ea4322;
-                        input:hover{
-                            opacity: 80%;
-                        }
-                        &:visited{
-                            color: gray;
-                        }
+                        @include btn;
+                        background: map-get($map: $buttom, $key: delete);
                     }
                 }
             }
@@ -145,8 +150,9 @@
             gap: 5vw;
             img{
                 width: 100%;
+                filter: grayscale(70%);
                 &:hover {
-                    opacity: 70%;
+                    filter: grayscale(0%);
                     cursor: pointer;
                 }
             }

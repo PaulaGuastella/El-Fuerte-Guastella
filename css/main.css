@@ -163,7 +163,7 @@
   -ms-grid-column: 1;
   grid-area: main;
   height: 120vw;
-  width: 100%;
+  width: auto;
   gap: 1vw;
   margin: 2vw 0.1vw;
   display: -webkit-box;
@@ -190,16 +190,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: uppercase;
 }
 
-#index #presentacion__empresa .titulo__presentacion h1 {
+#index #presentacion__empresa .titulo__presentacion h1, #index #presentacion__empresa .titulo__presentacion h2 {
   font-size: 4vw;
   text-shadow: 2px 2px 2px #ffffff;
 }
 
 #index #presentacion__empresa .titulo__presentacion h2 {
   font-size: 3vw;
-  text-shadow: 2px 2px 2px #ffffff;
 }
 
 #index #presentacion__empresa .row {
@@ -233,10 +233,11 @@
   margin: 0.3vw;
   width: 50%;
   font-size: 1.6vw;
+  border-radius: 0% 20% 20% 0%;
 }
 
 #index #presentacion__empresa .row .col p:hover {
-  background-color: #192a38;
+  background-color: #9ccf1a;
   font-size: 1.8vw;
   cursor: pointer;
 }
@@ -244,9 +245,10 @@
 #index #presentacion__empresa .row img {
   width: 30%;
   height: 100%;
+  border-radius: 20% 0% 0% 20%;
 }
 
-#index #promociones {
+#index #index__promociones {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: section;
@@ -254,7 +256,7 @@
   margin-bottom: 5vw;
 }
 
-#index #promociones h2 {
+#index #index__promociones h2 {
   text-align: center;
   font-size: 3vw;
   background: -webkit-gradient(linear, left top, right top, from(#789a23), to(#987965));
@@ -263,19 +265,19 @@
   margin-top: 0.5vw;
 }
 
-#index #promociones h2 a {
+#index #index__promociones h2 a {
   color: #ffffff;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
 
-#index #promociones h2 a:hover {
+#index #index__promociones h2 a:hover {
   opacity: 50%;
-  color: red;
+  color: #a62020;
   font-size: 3.5vw;
 }
 
-#index #promociones .nuestras__promos {
+#index #index__promociones .index__nuestras__promos {
   padding: 0.8vw;
   height: 25vw;
   gap: 1vw;
@@ -294,22 +296,23 @@
           justify-content: space-evenly;
 }
 
-#index #promociones .nuestras__promos .promocion {
+#index #index__promociones .index__nuestras__promos .index__promocion {
   width: 23vw;
   height: 23vw;
   border: 0.5vw solid #789a23;
   background-color: #ffffff;
+  border-radius: 5%;
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-#index #promociones .nuestras__promos .promocion:hover {
+#index #index__promociones .index__nuestras__promos .index__promocion:hover {
   width: 25vw;
   height: 25vw;
-  border: 0.7vw solid #987965;
+  border: 0.7vw solid #a62020;
 }
 
-#index #promociones .nuestras__promos .promocion img {
+#index #index__promociones .index__nuestras__promos .index__promocion img {
   width: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -323,8 +326,8 @@
       grid-template-areas: "header" "menu" "footer";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 15vw 150vw 10vw;
-      grid-template-rows: 15vw 150vw 10vw;
+  -ms-grid-rows: 15vw 190vw 10vw;
+      grid-template-rows: 15vw 190vw 10vw;
 }
 
 #promociones .header__promociones {
@@ -356,7 +359,7 @@
   margin: 2vw;
 }
 
-#promociones .seccion__promocion h1 {
+#promociones .seccion__promocion h1, #promociones .seccion__promocion #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #promociones .seccion__promocion h2 {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 2px #000;
@@ -375,13 +378,27 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2vw;
-  width: 100vw;
+  width: auto;
 }
 
 #promociones .seccion__promocion .promo__caracteristicas .promo__img {
   margin: 2vw;
-  border: 0.4vw solid white;
+  width: 40vw;
+  border: 0.5vw solid white;
   background-color: #ffffff;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__img:hover {
+  -webkit-filter: sepia(50%);
+          filter: sepia(50%);
+  cursor: pointer;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__img img {
+  width: 100%;
+  height: 100%;
 }
 
 #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
@@ -403,6 +420,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 2%;
+}
+
+#promociones .seccion__promocion .promo__caracteristicas .promo__texto:hover {
+  -webkit-filter: sepia(50%);
+          filter: sepia(50%);
+  cursor: pointer;
 }
 
 #promociones .seccion__promocion .promo__caracteristicas .promo__texto h2 {
@@ -434,6 +458,10 @@
   grid-area: footer;
   background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
   background: linear-gradient(to right, #987965, #ffffff);
+}
+
+#promociones .footer__promociones .menu__nav__footer .barra__nav__footer li a {
+  color: #000000;
 }
 
 #contacto {
@@ -486,6 +514,7 @@
   background-image: url("../img/fondo-contacto.jpeg");
   color: #000000;
   border: 0.4vw solid #000000;
+  border-radius: 1%;
 }
 
 #contacto .main__contacto .formulario__contacto h2 {
@@ -638,6 +667,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* maps */
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones input {
@@ -647,27 +677,29 @@
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input {
-  background-color: #789a23;
+  width: 8vw;
+  background: #98e12a;
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input:hover {
-  opacity: 80%;
+  opacity: 50%;
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones .boton__enviar input:visited {
-  color: gray;
+  color: #808080;
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input {
-  background-color: #ea4322;
+  width: 8vw;
+  background: #973636;
 }
 
-#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input input:hover {
-  opacity: 80%;
+#contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input:hover {
+  opacity: 50%;
 }
 
 #contacto .main__contacto .formulario__contacto .contenedor__botones .boton__borrar input:visited {
-  color: gray;
+  color: #808080;
 }
 
 #contacto .main__contacto .imagen__contacto {
@@ -683,10 +715,13 @@
 
 #contacto .main__contacto .imagen__contacto img {
   width: 100%;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
 }
 
 #contacto .main__contacto .imagen__contacto img:hover {
-  opacity: 70%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
   cursor: pointer;
 }
 
@@ -707,22 +742,22 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: linear-gradient(to right, #987965, #ffffff);
+  background-color: linear-gradient(to right, #ffffff, #987965);
 }
 
 #modelo .header__modelos .navbar-nav {
-  background: -webkit-gradient(linear, left top, right top, from(#987965), to(#ffffff));
-  background: linear-gradient(to right, #987965, #ffffff);
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#987965));
+  background: linear-gradient(to right, #ffffff, #987965);
 }
 
 #modelo .header__modelos .navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
-  background-color: linear-gradient(to right, #987965, #ffffff);
+  color: #000000;
+  background-color: linear-gradient(to right, #ffffff, #987965);
 }
 
 #modelo .header__modelos .navbar-light .navbar-nav .nav-link.active {
-  color: #ffffff;
-  background-color: linear-gradient(to right, #987965, #ffffff);
+  color: #000000;
+  background-color: linear-gradient(to right, #ffffff, #987965);
 }
 
 #modelo .menu__modelos {
@@ -849,7 +884,7 @@
   margin: 5vw;
 }
 
-#nosotros .nuestras__sucursales h1 {
+#nosotros .nuestras__sucursales h1, #nosotros .nuestras__sucursales #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #nosotros .nuestras__sucursales h2 {
   color: #000000;
   text-shadow: 2px 2px 2px #ffffff;
   margin: 1vw;
@@ -1051,7 +1086,7 @@
   opacity: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1117,14 +1152,14 @@
             align-items: center;
     gap: 2vw;
   }
-  #index #promociones {
+  #index #index__promociones {
     height: 80vw;
   }
-  #index #promociones .nuestras__promos {
+  #index #index__promociones .index__nuestras__promos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #index #promociones .nuestras__promos .promocion {
+  #index #index__promociones .index__nuestras__promos .index__promocion {
     width: 35vw;
     height: 35vw;
     -webkit-box-pack: space-evenly;
@@ -1213,7 +1248,8 @@
   #nosotros {
     -ms-grid-rows: 20vw 155vw 90vw 25vw;
         grid-template-rows: 20vw 155vw 90vw 25vw;
-    grid-template-column: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
     gap: 15vw;
   }
   #nosotros .nuestras__sucursales {
@@ -1255,7 +1291,7 @@
   /* tamaño celular */
 }
 
-@media screen and (max-width: 768px) and (max-width: 481px) {
+@media screen and (max-width: 767px) and (max-width: 425px) {
   #header {
     height: 20vw;
   }
@@ -1299,16 +1335,16 @@
   #index #presentacion__empresa .titulo__presentacion {
     font-size: 10vw;
   }
-  #promociones .nuestras__promos {
+  #index__promociones .index__nuestras__promos {
     gap: 10vw;
   }
-  #promociones .nuestras__promos .promocion {
+  #index__promociones .index__nuestras__promos .index__promocion {
     width: 70vw;
     height: 70vw;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #contacto {
     -ms-grid-rows: 20vw 450vw 35vw;
         grid-template-rows: 20vw 450vw 35vw;
@@ -1365,7 +1401,7 @@
         grid-template-rows: 20vw 200vw 250vw 35vw;
     gap: 35vw;
   }
-  #nosotros section .nuestras__sucursales h1 {
+  #nosotros section .nuestras__sucursales h1, #nosotros section .nuestras__sucursales #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #nosotros section .nuestras__sucursales h2 {
     font-size: 10vw;
   }
   #nosotros section .nuestras__sucursales .sucursales .sucursal__map {

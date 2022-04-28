@@ -1,4 +1,4 @@
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 767px) {
     #header {
         display: flex;
         flex-direction: row-reverse;
@@ -56,11 +56,11 @@
             align-items: center;
             gap: 2vw;
         }   
-        #promociones {
+        #index__promociones {
             height: 80vw;
-            .nuestras__promos{
+            .index__nuestras__promos{
                 flex-wrap: wrap;
-                .promocion{
+                .index__promocion{
                     width: 35vw;
                     height: 35vw;
                     justify-content: space-evenly;
@@ -141,7 +141,7 @@
     }
     #nosotros {
         grid-template-rows: 20vw 155vw 90vw 25vw;
-        grid-template-column: 100%;
+        grid-template-columns: 100%;
         gap: 15vw;
         .nuestras__sucursales {
             margin: 2vw;
@@ -180,7 +180,7 @@
     }
 }
 /* tamaño celular */
-@media screen and (max-width:$mobile) {
+@media screen and (max-width: 425px) {
     #header {
         height: 20vw;
         .logo__contacto {
@@ -228,10 +228,10 @@
             }
         }
     }
-        #promociones {
-            .nuestras__promos {
+        #index__promociones {
+            .index__nuestras__promos {
                 gap: 10vw;
-                .promocion {
+                .index__promocion {
                     width: 70vw;
                     height: 70vw;
                 }

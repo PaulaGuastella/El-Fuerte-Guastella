@@ -1,0 +1,358 @@
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #header .logo__contacto {
+    width: 60vw;
+    height: 20vw;
+  }
+  #header .logo__contacto .logo a img {
+    width: 17vw;
+    height: 10vw;
+  }
+  #header .navbar {
+    width: 30vw;
+  }
+  #header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 2vw;
+  }
+  #footer {
+    height: 20vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .copy p {
+    font-size: 2.2vw;
+  }
+  #footer .barra__nav__footer li a {
+    font-size: 2.2vw;
+  }
+  #footer .contacto__footer {
+    gap: 2vw;
+  }
+  #footer .contacto__footer .bi {
+    font-size: 4vw;
+  }
+  #index {
+    -ms-grid-rows: 30vw 130vw 80vw 30vw;
+        grid-template-rows: 30vw 130vw 80vw 30vw;
+    gap: 10vw;
+  }
+  #index #presentacion__empresa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+  }
+  #index #index__promociones {
+    height: 80vw;
+  }
+  #index #index__promociones .index__nuestras__promos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #index #index__promociones .index__nuestras__promos .index__promocion {
+    width: 35vw;
+    height: 35vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contacto {
+    -ms-grid-rows: 20vw 370vw 30vw;
+        grid-template-rows: 20vw 370vw 30vw;
+  }
+  #contacto .main__contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
+    width: 50vw;
+    margin-left: 4vw;
+  }
+  #promociones {
+    -ms-grid-rows: 20vw 650vw 30vw;
+        grid-template-rows: 20vw 650vw 30vw;
+    gap: 10vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__img {
+    width: 80vw;
+    height: 80vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__img img {
+    width: 100%;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
+    width: 80vw;
+    height: 70vw;
+  }
+  #modelo {
+    -ms-grid-rows: 20vw 460vw 20vw;
+        grid-template-rows: 20vw 460vw 20vw;
+    gap: 18vw;
+  }
+  #modelo .menu__modelos h2 {
+    font-size: 4.5vw;
+  }
+  #modelo .menu__modelos .tipologias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos {
+    width: 80vw;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos img {
+    width: 100%;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo {
+    width: 80vw;
+    height: 60vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo h4 {
+    font-size: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo li {
+    font-size: 2.5vw;
+  }
+  #nosotros {
+    -ms-grid-rows: 20vw 155vw 90vw 25vw;
+        grid-template-rows: 20vw 155vw 90vw 25vw;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 15vw;
+  }
+  #nosotros .nuestras__sucursales {
+    margin: 2vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map {
+    width: 80vw;
+    height: 70vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map iframe {
+    width: 55vw;
+    height: 45vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map h3 {
+    font-size: 3vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map p {
+    font-size: 2.2vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .nosotros .sobre__nosotros p {
+    font-size: 4vw;
+  }
+  #nosotros .nuestras__sucursales .sucursales .nosotros .video__institucional iframe {
+    width: 1000vw;
+    height: 60vw;
+  }
+  /* tamaño celular */
+}
+
+@media screen and (max-width: 767px) and (max-width: 425px) {
+  #header {
+    height: 20vw;
+  }
+  #header .logo__contacto .logo img {
+    width: 18vw;
+  }
+  #header .contacto__header a .bi {
+    font-size: 4vw;
+    color: black;
+    margin: 0.5vw;
+  }
+  #header .contacto__header a .bi:hover {
+    font-size: 4.2vw;
+    color: black;
+    opacity: 50%;
+  }
+  #header .navbar {
+    width: 40vw;
+  }
+  #header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 2.2vw;
+  }
+  #footer {
+    gap: 1vw;
+    height: 30vw;
+  }
+  #index {
+    -ms-grid-rows: 40vw 100vw 330vw 40vw;
+        grid-template-rows: 40vw 100vw 330vw 40vw;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin: 0;
+  }
+  #index #presentacion__empresa {
+    height: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #index #presentacion__empresa .titulo__presentacion {
+    font-size: 10vw;
+  }
+  #index__promociones .index__nuestras__promos {
+    gap: 10vw;
+  }
+  #index__promociones .index__nuestras__promos .index__promocion {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contacto {
+    -ms-grid-rows: 20vw 450vw 35vw;
+        grid-template-rows: 20vw 450vw 35vw;
+  }
+  #contacto .main__contacto .formulario__contacto .contenedor__datos__personales .datos__personales input {
+    width: 60vw;
+  }
+  #promociones {
+    -ms-grid-rows: 30vw 840vw 30vw;
+        grid-template-rows: 30vw 840vw 30vw;
+  }
+  #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
+    height: 110vw;
+  }
+  #modelo {
+    -ms-grid-rows: 20vw 540vw 20vw;
+        grid-template-rows: 20vw 540vw 20vw;
+    gap: 18vw;
+  }
+  #modelo .menu__modelos h2 {
+    font-size: 4.5vw;
+  }
+  #modelo .menu__modelos .tipologias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3vw;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos {
+    width: 65vw;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .imagen__modelos img {
+    width: 100%;
+    height: auto;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo {
+    width: 65vw;
+    height: 90vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo h4 {
+    font-size: 4vw;
+  }
+  #modelo .menu__modelos .tipologias .caracteristicas__modelo li {
+    font-size: 3.2vw;
+  }
+  #nosotros {
+    -ms-grid-rows: 20vw 200vw 250vw 35vw;
+        grid-template-rows: 20vw 200vw 250vw 35vw;
+    gap: 35vw;
+  }
+  #nosotros section .nuestras__sucursales h1 {
+    font-size: 10vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map {
+    width: 80vw;
+    height: 130vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map h3 {
+    font-size: 7vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map p {
+    font-size: 5vw;
+  }
+  #nosotros section .nuestras__sucursales .sucursales .sucursal__map iframe {
+    width: 70vw;
+    height: 60vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros {
+    height: 90vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros p {
+    font-size: 3vw;
+    height: 40vw;
+    line-height: 4vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nosotros section .nosotros .sobre__nosotros .segundo__parrafo {
+    height: 60vw;
+  }
+  #nosotros section .nosotros .sobre__nosotros span {
+    font-size: 4.5vw;
+  }
+  #nosotros section .nosotros .video__institucional {
+    margin-top: 25vw;
+  }
+  #nosotros section .nosotros .video__institucional iframe {
+    width: 70vw;
+    height: 60vw;
+  }
+}
