@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #header {
         display: flex;
         flex-direction: row-reverse;
@@ -46,24 +46,56 @@
         }    
     }
     #index {
-        grid-template-rows: 30vw 130vw 80vw 30vw;
+        grid-template-rows: 35vw 120vw 360vw 35vw;
         gap: 10vw;
-        
         #presentacion__empresa {
             flex-direction: column;
-            height: 90vw;
+            height: 120vw;
             justify-content: center;
             align-items: center;
             gap: 2vw;
-        }   
+            .container {
+                .row {
+                    .col{
+                        width: 30vw;
+                        height: 15vw;
+                        p {
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
         #index__promociones {
-            height: 80vw;
-            .index__nuestras__promos{
-                flex-wrap: wrap;
-                .index__promocion{
-                    width: 35vw;
-                    height: 35vw;
-                    justify-content: space-evenly;
+            height: 360vw;
+            .index__nuestras__promos {
+                height: 360vw;
+                gap: 1vw;
+                margin: 1vw 1vw;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .index__promocion {
+                    width: 70vw;
+                    height: 70vw;
+                    border:  0.5vw solid #789a23 ;
+                    background-color: #ffffff;
+                    border-radius: 5%;
+                    overflow: hidden;
+                    transition: all 400ms;
+                    a {
+                        width: 70vw;
+                        height: 70vw;
+                    }
+                    :hover{
+                        width: 72vw;
+                        height: 72vw;
+                        border:0.6vw solid #a62020;
+                    }
+                    img {
+                        width: 100%;
+                        transition: all 1s;
+                    }
                 }
             }
         }
@@ -80,8 +112,11 @@
                         margin-left: 4vw;
                         }
                     }
-                }  
+                }
             }   
+        }
+        .footer__contacto {
+            height: 30vw;
         }
     }
     #promociones{
@@ -96,14 +131,18 @@
                     width: 80vw;
                     height: 80vw;
                     img{
-                        width: 100%;
-                    }
+                        width: 80vw;
+                        height: 80vw;
+                    }                    
                 }
                 .promo__texto{
                     width: 80vw;
                     height: 70vw;
                 }
             }
+        }
+        .footer__promociones {
+            height: 30vw;
         } 
     }
     #modelo{
@@ -163,6 +202,7 @@
                         font-size: 2.2vw;
                     }
                 }
+            }
             .nosotros {
                 .sobre__nosotros {
                     p{
@@ -217,20 +257,20 @@
         height: 30vw;
     }
     #index{
-        grid-template-rows: 40vw 100vw 330vw 40vw;
+        grid-template-rows: 40vw 130vw 330vw 40vw;
         grid-template-columns: 100%;
         margin: 0;
         #presentacion__empresa {
-            height: 100vw;
+            height: 130vw;
             align-items:center;
             .titulo__presentacion {
                 font-size: 10vw;
             }
         }
-    }
         #index__promociones {
             .index__nuestras__promos {
                 gap: 10vw;
+                height: 330vw;
                 .index__promocion {
                     width: 70vw;
                     height: 70vw;
@@ -239,8 +279,9 @@
         }
     }
     #contacto {
-        grid-template-rows: 20vw 450vw 35vw;
+        grid-template-rows: 20vw 490vw 30vw;
         .main__contacto {
+            margin-top: 25vw;
             .formulario__contacto {
                 .contenedor__datos__personales {
                     .datos__personales {
@@ -253,11 +294,12 @@
         }
     }
     #promociones {
-        grid-template-rows: 30vw 840vw 30vw;
+        grid-template-rows: 30vw 950vw 30vw;
         .seccion__promocion {
+            margin-top: 15vw;
             .promo__caracteristicas {
                 .promo__texto {
-                    height: 110vw;
+                    height: 140vw;
                 }
             }
         }

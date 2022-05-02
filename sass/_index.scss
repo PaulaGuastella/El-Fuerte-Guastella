@@ -110,6 +110,9 @@
             flex-wrap: nowrap;
             justify-content: space-evenly;
             & .index__promocion {
+                a {
+                    display: inline-block;
+                }
                 width: 23vw;
                 height: 23vw;
                 border:  0.5vw solid #789a23 ;
