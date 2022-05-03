@@ -257,7 +257,7 @@
         height: 30vw;
     }
     #index{
-        grid-template-rows: 40vw 130vw 330vw 40vw;
+        grid-template-rows: 20vw 140vw 340vw 40vw;
         grid-template-columns: 100%;
         margin: 0;
         #presentacion__empresa {
@@ -279,7 +279,8 @@
         }
     }
     #contacto {
-        grid-template-rows: 20vw 490vw 30vw;
+        grid-template-rows: 20vw 530vw 30vw;
+        gap: 10vw;
         .main__contacto {
             margin-top: 25vw;
             .formulario__contacto {
@@ -294,7 +295,7 @@
         }
     }
     #promociones {
-        grid-template-rows: 30vw 950vw 30vw;
+        grid-template-rows: 20vw 950vw 30vw;
         .seccion__promocion {
             margin-top: 15vw;
             .promo__caracteristicas {
@@ -305,7 +306,7 @@
         }
     }
     #modelo{
-        grid-template-rows: 20vw 540vw 20vw;
+        grid-template-rows: 20vw 550vw 20vw;
         gap: 18vw;
         .menu__modelos {
             h2 {
@@ -338,8 +339,8 @@
         }
     }
     #nosotros {
-        grid-template-rows: 20vw 200vw 250vw 35vw;
-        gap: 35vw;
+        grid-template-rows: 20vw 200vw 300vw 30vw;
+        gap: 10vw;
         section {
             .nuestras__sucursales {
                 h1 {
