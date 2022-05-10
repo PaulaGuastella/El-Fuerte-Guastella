@@ -238,6 +238,7 @@
 
 #index #presentacion__empresa .row .col p:hover {
   background-color: #9ccf1a;
+  width: 55%;
   font-size: 1.8vw;
   cursor: pointer;
 }
@@ -852,8 +853,8 @@
   display: grid;
   gap: 5vw;
       grid-template-areas: "header" "sucursales" "nosotros" "footer";
-  -ms-grid-rows: 15vw 60vw 90vw 10vw;
-      grid-template-rows: 15vw 60vw 90vw 10vw;
+  -ms-grid-rows: 15vw 60vw 160vw 10vw;
+      grid-template-rows: 15vw 60vw 160vw 10vw;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
 }
@@ -963,6 +964,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 0.5vw solid black;
 }
 
 #nosotros .nosotros h2 {
@@ -976,25 +978,76 @@
 }
 
 #nosotros .nosotros .sobre__nosotros {
-  width: 80vw;
+  width: 90vw;
+  gap: 2vw;
 }
 
-#nosotros .nosotros .sobre__nosotros p {
-  font-size: 1.5vw;
-  text-align: center;
-  line-height: 2.5vw;
-}
-
-#nosotros .nosotros .sobre__nosotros span {
-  font-weight: bold;
-  font-size: 2vw;
-  text-shadow: 2px 2px 2px #ffffff;
-}
-
-#nosotros .nosotros .video__institucional {
+#nosotros .nosotros .sobre__nosotros .history__one {
+  height: 30vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 2vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__one img {
+  width: 50%;
+  height: 25vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__one p {
+  text-align: center;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__two {
+  height: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 2vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__two img {
+  width: 45%;
+  height: 25vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__two p {
+  text-align: center;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__three {
+  height: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .history__three img {
+  width: 45%;
+  height: 25vw;
+}
+
+#nosotros .nosotros .sobre__nosotros p {
+  font-size: 1.9vw;
+  text-align: justify;
+  line-height: 2.5vw;
+}
+
+#nosotros .nosotros .sobre__nosotros .video__institucional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1004,12 +1057,21 @@
   margin: 3vw auto;
 }
 
-#nosotros .nosotros .video__institucional iframe {
+#nosotros .nosotros .sobre__nosotros .video__institucional iframe {
   height: 40vw;
   width: 50vw;
 }
 
+#nosotros .nosotros .sobre__nosotros .video__institucional p {
+  font-weight: bold;
+  font-size: 3vw;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
 #nosotros .footer__nosotros {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
   background: -webkit-gradient(linear, right top, left top, from(#789a23), to(#ffffff));
   background: linear-gradient(to left, #789a23, #ffffff);
 }
@@ -1115,7 +1177,7 @@
     font-size: 2vw;
   }
   #footer {
-    height: 20vw;
+    height: 25vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1124,21 +1186,21 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #footer .copy p {
-    font-size: 2.2vw;
+  #footer.copy p {
+    font-size: 3vw;
   }
   #footer .barra__nav__footer li a {
-    font-size: 2.2vw;
+    font-size: 3vw;
   }
   #footer .contacto__footer {
     gap: 2vw;
   }
-  #footer .contacto__footer .bi {
-    font-size: 4vw;
+  #footer .contacto__footer a .bi {
+    font-size: 6vw;
   }
   #index {
-    -ms-grid-rows: 35vw 120vw 360vw 35vw;
-        grid-template-rows: 35vw 120vw 360vw 35vw;
+    -ms-grid-rows: 35vw 140vw 360vw 35vw;
+        grid-template-rows: 35vw 140vw 360vw 35vw;
     gap: 10vw;
   }
   #index #presentacion__empresa {
@@ -1146,7 +1208,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 120vw;
+    height: 140vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1190,14 +1252,13 @@
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-  #index #index__promociones .index__nuestras__promos .index__promocion a {
-    width: 70vw;
-    height: 70vw;
-  }
-  #index #index__promociones .index__nuestras__promos .index__promocion :hover {
+  #index #index__promociones .index__nuestras__promos .index__promocion:hover {
     width: 72vw;
     height: 72vw;
-    border: 0.6vw solid #a62020;
+  }
+  #index #index__promociones .index__nuestras__promos .index__promocion a {
+    width: 100%;
+    height: 100%;
   }
   #index #index__promociones .index__nuestras__promos .index__promocion img {
     width: 100%;
@@ -1205,8 +1266,8 @@
     transition: all 1s;
   }
   #contacto {
-    -ms-grid-rows: 20vw 370vw 30vw;
-        grid-template-rows: 20vw 370vw 30vw;
+    -ms-grid-rows: 20vw 440vw 30vw;
+        grid-template-rows: 20vw 440vw 30vw;
   }
   #contacto .main__contacto {
     -webkit-box-orient: vertical;
@@ -1291,8 +1352,8 @@
     font-size: 2.5vw;
   }
   #nosotros {
-    -ms-grid-rows: 20vw 155vw 90vw 25vw;
-        grid-template-rows: 20vw 155vw 90vw 25vw;
+    -ms-grid-rows: 20vw 155vw 170vw 25vw;
+        grid-template-rows: 20vw 155vw 170vw 25vw;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     gap: 15vw;
@@ -1326,12 +1387,34 @@
   #nosotros .nuestras__sucursales .sucursales .sucursal__map p {
     font-size: 2.2vw;
   }
-  #nosotros .nuestras__sucursales .nosotros .sobre__nosotros p {
-    font-size: 4vw;
+  #nosotros .nuestras__sucursales .nosotros .sobre__nosotros .video__institucional {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3vw auto;
   }
-  #nosotros .nuestras__sucursales .nosotros .video__institucional iframe {
-    width: 1000vw;
-    height: 60vw;
+  #nosotros .nuestras__sucursales .nosotros .sobre__nosotros .video__institucional iframe {
+    height: 40vw;
+    width: 50vw;
+  }
+  #nosotros .nuestras__sucursales .nosotros .sobre__nosotros .video__institucional p {
+    font-weight: bold;
+    font-size: 3vw;
+    text-shadow: 2px 2px 2px #ffffff;
+  }
+  #nosotros .footer__nosotros .copy p {
+    font-size: 3vw;
   }
 }
 
@@ -1372,6 +1455,7 @@
     margin: 0;
   }
   #index #presentacion__empresa {
+    margin-top: 25vw;
     height: 130vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1388,9 +1472,13 @@
     width: 70vw;
     height: 70vw;
   }
+  #index #index__promociones .index__nuestras__promos .index__promocion:hover {
+    width: 72vw;
+    height: 72vw;
+  }
   #contacto {
-    -ms-grid-rows: 20vw 530vw 30vw;
-        grid-template-rows: 20vw 530vw 30vw;
+    -ms-grid-rows: 20vw 590vw 30vw;
+        grid-template-rows: 20vw 590vw 30vw;
     gap: 10vw;
   }
   #contacto .main__contacto {
@@ -1404,15 +1492,17 @@
         grid-template-rows: 20vw 950vw 30vw;
   }
   #promociones .seccion__promocion {
-    margin-top: 15vw;
+    margin-top: 25vw;
   }
   #promociones .seccion__promocion .promo__caracteristicas .promo__texto {
     height: 140vw;
   }
   #modelo {
-    -ms-grid-rows: 20vw 550vw 20vw;
-        grid-template-rows: 20vw 550vw 20vw;
-    gap: 18vw;
+    -ms-grid-rows: 20vw 560vw 20vw;
+        grid-template-rows: 20vw 560vw 20vw;
+  }
+  #modelo .menu__modelos {
+    margin-top: 25vw;
   }
   #modelo .menu__modelos h2 {
     font-size: 4.5vw;
@@ -1447,48 +1537,87 @@
     font-size: 3.2vw;
   }
   #nosotros {
-    -ms-grid-rows: 20vw 200vw 300vw 30vw;
-        grid-template-rows: 20vw 200vw 300vw 30vw;
-    gap: 10vw;
+    -ms-grid-rows: 20vw 220vw 470vw 30vw;
+        grid-template-rows: 20vw 220vw 470vw 30vw;
   }
-  #nosotros section .nuestras__sucursales h1, #nosotros section .nuestras__sucursales #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #nosotros section .nuestras__sucursales h2 {
+  #nosotros .nuestras__sucursales h1, #nosotros .nuestras__sucursales #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #nosotros .nuestras__sucursales h2 {
     font-size: 10vw;
   }
-  #nosotros section .nuestras__sucursales .sucursales .sucursal__map {
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map {
     width: 80vw;
     height: 130vw;
   }
-  #nosotros section .nuestras__sucursales .sucursales .sucursal__map h3 {
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map h3 {
     font-size: 7vw;
   }
-  #nosotros section .nuestras__sucursales .sucursales .sucursal__map p {
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map p {
     font-size: 5vw;
   }
-  #nosotros section .nuestras__sucursales .sucursales .sucursal__map iframe {
+  #nosotros .nuestras__sucursales .sucursales .sucursal__map iframe {
     width: 70vw;
     height: 60vw;
   }
-  #nosotros section .nosotros .sobre__nosotros {
-    height: 90vw;
-  }
-  #nosotros section .nosotros .sobre__nosotros p {
-    font-size: 3vw;
-    height: 40vw;
-    line-height: 4vw;
+  #nosotros .nosotros .sobre__nosotros .history__one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 110vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #nosotros section .nosotros .sobre__nosotros .segundo__parrafo {
-    height: 60vw;
+  #nosotros .nosotros .sobre__nosotros .history__one img {
+    height: 45vw;
+    width: 60vw;
   }
-  #nosotros section .nosotros .sobre__nosotros span {
-    font-size: 4.5vw;
+  #nosotros .nosotros .sobre__nosotros .history__one p {
+    font-size: 4vw;
+    font-weight: 200;
+    line-height: 4vw;
   }
-  #nosotros section .nosotros .video__institucional {
-    margin-top: 25vw;
+  #nosotros .nosotros .sobre__nosotros .history__two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #nosotros section .nosotros .video__institucional iframe {
+  #nosotros .nosotros .sobre__nosotros .history__two img {
+    height: 45vw;
+    width: 60vw;
+  }
+  #nosotros .nosotros .sobre__nosotros .history__two p {
+    font-size: 4vw;
+    font-weight: 200;
+    line-height: 4vw;
+  }
+  #nosotros .nosotros .sobre__nosotros .history__three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nosotros .nosotros .sobre__nosotros .history__three img {
+    height: 45vw;
+    width: 60vw;
+  }
+  #nosotros .nosotros .sobre__nosotros .history__three p {
+    font-size: 4vw;
+    font-weight: 200;
+    line-height: 4vw;
+  }
+  #nosotros .nosotros .sobre__nosotros .video__institucional {
+    margin-top: 5vw;
+  }
+  #nosotros .nosotros .sobre__nosotros .video__institucional iframe {
     width: 70vw;
     height: 60vw;
   }

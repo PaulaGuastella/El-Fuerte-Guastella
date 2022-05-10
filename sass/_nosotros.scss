@@ -7,7 +7,7 @@
     "sucursales"
     "nosotros"
     "footer";
-    grid-template-rows: 15vw 60vw 90vw 10vw;
+    grid-template-rows: 15vw 60vw 160vw 10vw;
     grid-template-columns: 100%;
     .header__nosotros {
         grid-area: header;
@@ -24,7 +24,6 @@
             background-color: $bgnosotros;
         }
     }
-
     .nuestras__sucursales {
         grid-area: sucursales;
         margin: 5vw;
@@ -76,6 +75,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 0.5vw solid black;
         h2 {
             color: #000000;
             text-shadow: 2px 2px 2px #ffffff;
@@ -86,30 +86,69 @@
             letter-spacing: 0.3vw;
         }
         .sobre__nosotros {
-            width: 80vw;
+            width: 90vw;
+            gap: 2vw;
+            .history__one {
+                height: 30vw;
+                display: flex;
+                gap: 2vw;
+                img {
+                    width: 50%;
+                    height: 25vw;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+            .history__two {
+                height: 30vw;
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 2vw;
+                img {
+                    width: 45%;
+                    height: 25vw;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+            .history__three {
+                height: 30vw;
+                display: flex;
+                gap: 2vw;
+                img {
+                    width: 45%;
+                    height: 25vw;
+                }
+            }
             p{
-                font-size: 1.5vw;
-                text-align: center;
+                font-size: 1.9vw;
+                text-align: justify;
                 line-height: 2.5vw;
             }
-            span{
-                font-weight: bold;
-                font-size: 2vw;
-                text-shadow: 2px 2px 2px #ffffff;
-            }
-        }
-        .video__institucional {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 3vw auto;
-            iframe {
+            .video__institucional {
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                justify-content: center;
+                align-items: center;
+                margin: 3vw auto;
+                iframe {
                 height: 40vw;
                 width: 50vw;
+                }
+                p{
+                    font-weight: bold;
+                    font-size: 3vw;
+                    text-shadow: 2px 2px 2px #ffffff;
+                }
             }
         }
+        
     }
     .footer__nosotros {
+        grid-area: footer;
         background: $bgnosotros;
         .copy {
             p {

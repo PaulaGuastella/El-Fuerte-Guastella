@@ -23,34 +23,36 @@
         }
     }
     #footer {
-        height: 20vw;
+        height: 25vw;
         flex-direction: column;
         justify-content: center;
-        .copy {
+        &.copy {
                 p {
-                    font-size: 2.2vw;   
+                    font-size: 3vw;   
                 }
             }
         .barra__nav__footer {
             li {
                 a{
-                    font-size: 2.2vw;
+                    font-size: 3vw;
                 }
             }
         }
         .contacto__footer {
             gap: 2vw;
-            .bi {
-                font-size: 4vw;
+            a {
+                .bi {
+                    font-size: 6vw;
+                }
             }
         }    
     }
     #index {
-        grid-template-rows: 35vw 120vw 360vw 35vw;
+        grid-template-rows: 35vw 140vw 360vw 35vw;
         gap: 10vw;
         #presentacion__empresa {
             flex-direction: column;
-            height: 120vw;
+            height: 140vw;
             justify-content: center;
             align-items: center;
             gap: 2vw;
@@ -83,14 +85,13 @@
                     border-radius: 5%;
                     overflow: hidden;
                     transition: all 400ms;
-                    a {
-                        width: 70vw;
-                        height: 70vw;
-                    }
-                    :hover{
+                    &:hover {
                         width: 72vw;
                         height: 72vw;
-                        border:0.6vw solid #a62020;
+                    }
+                    a {
+                        width: 100%;
+                        height: 100%;
                     }
                     img {
                         width: 100%;
@@ -101,7 +102,7 @@
         }
     }
     #contacto {
-        grid-template-rows: 20vw 370vw 30vw;
+        grid-template-rows: 20vw 440vw 30vw;
         .main__contacto {
             flex-direction: column;
             .formulario__contacto {
@@ -179,7 +180,7 @@
         }
     }
     #nosotros {
-        grid-template-rows: 20vw 155vw 90vw 25vw;
+        grid-template-rows: 20vw 155vw 170vw 25vw;
         grid-template-columns: 100%;
         gap: 15vw;
         .nuestras__sucursales {
@@ -205,15 +206,30 @@
             }
             .nosotros {
                 .sobre__nosotros {
-                    p{
-                        font-size: 4vw;
+                    .video__institucional {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2vw;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 3vw auto;
+                        iframe {
+                            height: 40vw;
+                            width: 50vw;
+                        }
+                        p{
+                            font-weight: bold;
+                            font-size: 3vw;
+                            text-shadow: 2px 2px 2px #ffffff;
+                        }
                     }
                 }
-                .video__institucional {
-                    & iframe {
-                        width: 1000vw;
-                        height: 60vw;
-                    }
+            }
+        }
+        .footer__nosotros {
+            .copy {
+                p{
+                    font-size: 3vw;
                 }
             }
         }
@@ -261,6 +277,7 @@
         grid-template-columns: 100%;
         margin: 0;
         #presentacion__empresa {
+            margin-top: 25vw;
             height: 130vw;
             align-items:center;
             .titulo__presentacion {
@@ -274,12 +291,16 @@
                 .index__promocion {
                     width: 70vw;
                     height: 70vw;
+                    &:hover {
+                        width: 72vw;
+                        height: 72vw;
+                    }
                 }
             }
         }
     }
     #contacto {
-        grid-template-rows: 20vw 530vw 30vw;
+        grid-template-rows: 20vw 590vw 30vw;
         gap: 10vw;
         .main__contacto {
             margin-top: 25vw;
@@ -297,7 +318,7 @@
     #promociones {
         grid-template-rows: 20vw 950vw 30vw;
         .seccion__promocion {
-            margin-top: 15vw;
+            margin-top: 25vw;
             .promo__caracteristicas {
                 .promo__texto {
                     height: 140vw;
@@ -306,9 +327,9 @@
         }
     }
     #modelo{
-        grid-template-rows: 20vw 550vw 20vw;
-        gap: 18vw;
+        grid-template-rows: 20vw 560vw 20vw;
         .menu__modelos {
+            margin-top: 25vw;
             h2 {
                 font-size: 4.5vw;
             }
@@ -339,48 +360,74 @@
         }
     }
     #nosotros {
-        grid-template-rows: 20vw 200vw 300vw 30vw;
-        gap: 10vw;
-        section {
-            .nuestras__sucursales {
-                h1 {
-                    font-size: 10vw;
-                }
-                .sucursales {
-                    .sucursal__map {
-                        width: 80vw;
-                        height: 130vw;
-                        h3 {
-                            font-size: 7vw;
-                        }
-                        p {
-                            font-size: 5vw;
-                        }
-                        iframe {
-                            width: 70vw;
-                            height: 60vw;
-                        }
+        grid-template-rows: 20vw 220vw 470vw 30vw;
+        .nuestras__sucursales {
+            h1 {
+                font-size: 10vw;
+            }
+            .sucursales {
+                .sucursal__map {
+                    width: 80vw;
+                    height: 130vw;
+                    h3 {
+                        font-size: 7vw;
+                    }
+                    p {
+                        font-size: 5vw;
+                    }
+                    iframe {
+                        width: 70vw;
+                        height: 60vw;
                     }
                 }
             }
-            .nosotros {
-                .sobre__nosotros {
-                    height: 90vw;
+        }
+        .nosotros {
+            .sobre__nosotros {
+                .history__one {
+                    flex-direction: column;
+                    height: 110vw;
+                    align-items: center;
+                    img {
+                        height: 45vw;
+                        width: 60vw;
+                    }
                     p {
-                        font-size: 3vw;
-                        height: 40vw;
+                        font-size: 4vw;
+                        font-weight: 200;
                         line-height: 4vw;
-                        align-items: center;
                     }
-                    .segundo__parrafo {
-                        height: 60vw;
+                }
+                .history__two {
+                    flex-direction: column;
+                    height: 100vw;
+                    align-items: center;
+                    img {
+                        height: 45vw;
+                        width: 60vw;
                     }
-                    span{
-                        font-size: 4.5vw;
+                    p {
+                        font-size: 4vw;
+                        font-weight: 200;
+                        line-height: 4vw;
+                    }
+                }
+                .history__three {
+                    flex-direction: column;
+                    height: 100vw;
+                    align-items: center;
+                    img {
+                        height: 45vw;
+                        width: 60vw;
+                    }
+                    p {
+                        font-size: 4vw;
+                        font-weight: 200;
+                        line-height: 4vw;
                     }
                 }
                 .video__institucional {
-                    margin-top: 25vw;
+                    margin-top: 5vw;
                     iframe {
                         width: 70vw;
                         height: 60vw;
