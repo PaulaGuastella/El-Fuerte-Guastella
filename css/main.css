@@ -465,6 +465,10 @@
   background: linear-gradient(to right, #987965, #ffffff);
 }
 
+#promociones .footer__promociones .copy {
+  color: #000000;
+}
+
 #promociones .footer__promociones .menu__nav__footer .barra__nav__footer li a {
   color: #000000;
 }
@@ -840,7 +844,7 @@
 
 #modelo .footer_modelos .copy p {
   color: #000000;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #modelo .footer_modelos .barra__nav__footer li a {
@@ -1035,7 +1039,7 @@
 
 #nosotros .nosotros .sobre__nosotros p {
   font-size: 1.9vw;
-  text-align: justify;
+  text-align: center;
   line-height: 2.5vw;
 }
 
@@ -1064,7 +1068,7 @@
 
 #nosotros .nosotros .sobre__nosotros .video__institucional p {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 3.5vw;
   text-shadow: 2px 2px 2px #ffffff;
 }
 
@@ -1078,7 +1082,7 @@
 
 #nosotros .footer__nosotros .copy p {
   color: #000000;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 #nosotros .footer__nosotros .barra__nav__footer li a {
@@ -1186,16 +1190,16 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #footer.copy p {
+  #footer .copy p {
     font-size: 3vw;
   }
   #footer .barra__nav__footer li a {
     font-size: 3vw;
   }
-  #footer .contacto__footer {
+  #footer.contacto__footer {
     gap: 2vw;
   }
-  #footer .contacto__footer a .bi {
+  #footer.contacto__footer a .bi {
     font-size: 6vw;
   }
   #index {
@@ -1448,15 +1452,14 @@
     height: 30vw;
   }
   #index {
-    -ms-grid-rows: 20vw 140vw 340vw 40vw;
-        grid-template-rows: 20vw 140vw 340vw 40vw;
+    -ms-grid-rows: 20vw 170vw 340vw 40vw;
+        grid-template-rows: 20vw 170vw 340vw 40vw;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     margin: 0;
   }
   #index #presentacion__empresa {
     margin-top: 25vw;
-    height: 130vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1537,8 +1540,11 @@
     font-size: 3.2vw;
   }
   #nosotros {
-    -ms-grid-rows: 20vw 220vw 470vw 30vw;
-        grid-template-rows: 20vw 220vw 470vw 30vw;
+    -ms-grid-rows: 20vw 310vw 410vw 30vw;
+        grid-template-rows: 20vw 310vw 410vw 30vw;
+  }
+  #nosotros .nuestras__sucursales {
+    margin-top: 20vw;
   }
   #nosotros .nuestras__sucursales h1, #nosotros .nuestras__sucursales #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #nosotros .nuestras__sucursales h2 {
     font-size: 10vw;
@@ -1557,6 +1563,9 @@
     width: 70vw;
     height: 60vw;
   }
+  #nosotros .nosotros h2 {
+    font-weight: bold;
+  }
   #nosotros .nosotros .sobre__nosotros .history__one {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1573,7 +1582,7 @@
   }
   #nosotros .nosotros .sobre__nosotros .history__one p {
     font-size: 4vw;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 4vw;
   }
   #nosotros .nosotros .sobre__nosotros .history__two {
@@ -1592,7 +1601,7 @@
   }
   #nosotros .nosotros .sobre__nosotros .history__two p {
     font-size: 4vw;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 4vw;
   }
   #nosotros .nosotros .sobre__nosotros .history__three {
@@ -1611,7 +1620,7 @@
   }
   #nosotros .nosotros .sobre__nosotros .history__three p {
     font-size: 4vw;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 4vw;
   }
   #nosotros .nosotros .sobre__nosotros .video__institucional {

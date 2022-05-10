@@ -26,11 +26,11 @@
         height: 25vw;
         flex-direction: column;
         justify-content: center;
-        &.copy {
-                p {
-                    font-size: 3vw;   
-                }
+        .copy {
+            p {
+                font-size: 3vw;   
             }
+        }
         .barra__nav__footer {
             li {
                 a{
@@ -38,7 +38,7 @@
                 }
             }
         }
-        .contacto__footer {
+        &.contacto__footer {
             gap: 2vw;
             a {
                 .bi {
@@ -273,12 +273,11 @@
         height: 30vw;
     }
     #index{
-        grid-template-rows: 20vw 140vw 340vw 40vw;
+        grid-template-rows: 20vw 170vw 340vw 40vw;
         grid-template-columns: 100%;
         margin: 0;
         #presentacion__empresa {
             margin-top: 25vw;
-            height: 130vw;
             align-items:center;
             .titulo__presentacion {
                 font-size: 10vw;
@@ -360,8 +359,9 @@
         }
     }
     #nosotros {
-        grid-template-rows: 20vw 220vw 470vw 30vw;
+        grid-template-rows: 20vw 310vw 410vw 30vw;
         .nuestras__sucursales {
+            margin-top: 20vw;
             h1 {
                 font-size: 10vw;
             }
@@ -383,6 +383,9 @@
             }
         }
         .nosotros {
+            h2 {
+                font-weight: bold;
+            }
             .sobre__nosotros {
                 .history__one {
                     flex-direction: column;
@@ -394,7 +397,7 @@
                     }
                     p {
                         font-size: 4vw;
-                        font-weight: 200;
+                        font-weight: 500;
                         line-height: 4vw;
                     }
                 }
@@ -408,7 +411,7 @@
                     }
                     p {
                         font-size: 4vw;
-                        font-weight: 200;
+                        font-weight: 500;
                         line-height: 4vw;
                     }
                 }
@@ -422,7 +425,7 @@
                     }
                     p {
                         font-size: 4vw;
-                        font-weight: 200;
+                        font-weight: 500;
                         line-height: 4vw;
                     }
                 }

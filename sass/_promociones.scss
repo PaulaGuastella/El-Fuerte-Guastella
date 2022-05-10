@@ -89,6 +89,9 @@
     .footer__promociones {
         grid-area: footer;
         background: $bgpromociones;
+        .copy {
+            color: #000000;
+        }
         .menu__nav__footer {
             .barra__nav__footer {
                 li {
