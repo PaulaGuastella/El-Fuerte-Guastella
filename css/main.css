@@ -837,17 +837,17 @@
   list-style: circle;
 }
 
-#modelo .footer_modelos {
+#modelo .footer__modelos {
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#987965));
   background: linear-gradient(to right, #ffffff, #987965);
 }
 
-#modelo .footer_modelos .copy p {
+#modelo .footer__modelos .copy p {
   color: #000000;
   font-size: 1.5vw;
 }
 
-#modelo .footer_modelos .barra__nav__footer li a {
+#modelo .footer__modelos .barra__nav__footer li a {
   color: #000000;
 }
 
@@ -1354,6 +1354,9 @@
   }
   #modelo .menu__modelos .tipologias .caracteristicas__modelo li {
     font-size: 2.5vw;
+  }
+  #modelo #footer .copy p {
+    font-size: 3vw;
   }
   #nosotros {
     -ms-grid-rows: 20vw 155vw 170vw 25vw;

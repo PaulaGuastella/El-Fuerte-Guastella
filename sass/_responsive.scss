@@ -178,6 +178,13 @@
                 }
             }
         }
+        #footer {
+            .copy {
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
     }
     #nosotros {
         grid-template-rows: 20vw 155vw 170vw 25vw;
