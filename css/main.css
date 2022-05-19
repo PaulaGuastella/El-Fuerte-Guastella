@@ -526,7 +526,7 @@
   border-radius: 1%;
 }
 
-#contacto .main__contacto .formulario__contacto h2 {
+#contacto .main__contacto .formulario__contacto h1, #contacto .main__contacto .formulario__contacto #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #contacto .main__contacto .formulario__contacto h2 {
   margin: 2vw;
   text-align: center;
   text-transform: uppercase;
@@ -774,7 +774,7 @@
   grid-area: menu;
 }
 
-#modelo .menu__modelos h2 {
+#modelo .menu__modelos h1, #modelo .menu__modelos #index #presentacion__empresa .titulo__presentacion h2, #index #presentacion__empresa .titulo__presentacion #modelo .menu__modelos h2 {
   text-align: center;
   background: -webkit-gradient(linear, buttom, from(#987965), to(#789a23));
   background: linear-gradient(to buttom, #987965, #789a23);
